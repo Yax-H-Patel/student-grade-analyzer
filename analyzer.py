@@ -16,3 +16,9 @@ def calculate_grade(mark):
         return 'D'
     else:
         return 'F'
+
+def analyze_students(students):
+    analysis = []
+    for student in students:
+        analysis.append({"name": student[0], "mark": student[1], "grade": calculate_grade(student[1])})
+    return analysis
